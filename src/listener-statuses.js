@@ -1,0 +1,10 @@
+export const NETWORK_UP = 'PNNetworkUpCategory'
+export const NETWORK_DOWN = 'PNNetworkDownCategory'
+export const NETWORK_ISSUES = 'PNNetworkIssuesCategory'
+export const RECONNECTED = 'PNReconnectedCategory'
+export const CONNECTED = 'PNConnectedCategory'
+export const ACCESS_DENIED = 'PNAccessDeniedCategory' // statusCode=403
+export const MALFORMED_RESPONSE = 'PNMalformedResponseCategory'
+export const BAD_REQUEST = 'PNBadRequestCategory'
+export const DECRYPTION_ERROR = 'PNDecryptionErrorCategory'
+export const TIMEOUT = 'PNTimeoutCategory'

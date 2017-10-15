@@ -56,14 +56,14 @@ export const publish = (options) => {
       publisher.publish(publishConfig, (status) => {
         const {error} = status
         if (error) {
-          warn(`Publish failed.
-Channel:' ${channel}
-status: ${status}
-payload: ${payload}`)
+          warn('Publish failed.',
+            'Channel:', channel,
+            'status:', status,
+            'payload:', payload)
           return reject(error)
         }
-        verbose(`Publish complete successfully.
-Channel: ${channel}`)
+        verbose('Publish complete successfully.',
+          'Channel:', channel)
         return resolve(channel)
       })
     })

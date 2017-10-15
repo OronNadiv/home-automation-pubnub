@@ -58,7 +58,8 @@ export const publish = (options) => {
         if (error) {
           warn(`Publish failed.
 Channel:' ${channel}
-status: status`)
+status: ${status}
+payload: ${payload}`)
           return reject(error)
         }
         verbose(`Publish complete successfully.

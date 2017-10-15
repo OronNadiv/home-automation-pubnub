@@ -1,6 +1,6 @@
 {
   "name": "home-automation-pubnub",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "PubNub wrapper for the Home Automation project.",
   "author": "Oron Nadiv <oron@nadiv.us> (https://github.com/OronNadiv/)",
   "homepage": "https://github.com/OronNadiv/home-automation-pubnub/",
@@ -32,6 +32,7 @@
     "bluebird": "^3.5.1",
     "debug": "^3.1.0",
     "diehard": "^1.5.2",
+    "joi-browser": "^10.6.1",
     "md5": "^2.2.1",
     "pubnub": "^4.16.1"
   },

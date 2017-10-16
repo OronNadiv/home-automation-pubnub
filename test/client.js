@@ -6,7 +6,7 @@ const {CONNECTED} = require('../dist/listener-statuses')
 const Chance = require('chance')
 const chance = Chance()
 const expect = Chai.expect
-
+const Promise = require('bluebird')
 const clientToken = `server-token-${chance.guid()}`
 const serverToken = `client-token-${chance.guid()}`
 const groupId = `group-id-${chance.guid()}`
@@ -23,7 +23,7 @@ describe('pubnub', () => {
       .all([
         grant({
           token: clientToken,
-          tokenExpiresInMinutes: 1,
+          tokenExpiresInMinutes: 10,
           groupId,
           isTrusted,
           uuid
@@ -47,7 +47,16 @@ describe('pubnub', () => {
           ({category}) => {
             expect(category).to.eql(CONNECTED)
             console.log('publishing')
-            return publish({groupId, isTrusted: true, system, type, payload, token: serverToken, uuid})
+            return Promise
+              .resolve(publish({
+                groupId,
+                isTrusted: true,
+                system,
+                type,
+                payload,
+                token: serverToken,
+                uuid
+              }))
               .then(() => {
                 console.log('published')
               })

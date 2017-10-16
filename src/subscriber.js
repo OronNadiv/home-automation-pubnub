@@ -20,7 +20,7 @@ const schema = Joi.object().keys({
   token: Joi.string().required(),
   groupId: Joi.any().required(),
   isTrusted: Joi.boolean().required(),
-  uuid: Joi.string().required()
+  uuid: typeof window === 'undefined' ? Joi.string().required() : Joi.string()
 }).required()
 
 const verbose = DebugLib('ha:pubnub:subscriber:verbose')

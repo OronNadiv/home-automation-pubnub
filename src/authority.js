@@ -13,7 +13,7 @@ const schema = Joi.object().keys({
   tokenExpiresInMinutes: Joi.number().integer().min(1),
   groupId: Joi.any().required(),
   isTrusted: Joi.boolean().required(),
-  uuid: Joi.string().required()
+  uuid: typeof window === 'undefined' ? Joi.string().required() : Joi.string()
 }).required()
 
 export const grant = (options) => {

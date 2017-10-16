@@ -12,7 +12,7 @@ const schema = Joi.object().keys({
   system: Joi.string().required(),
   type: Joi.string().required(),
   payload: Joi.any(),
-  uuid: Joi.string().required()
+  uuid: typeof window === 'undefined' ? Joi.string().required() : Joi.string()
 }).required()
 
 const verbose = DebugLib('ha:pubnub:publisher:verbose')

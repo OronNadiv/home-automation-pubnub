@@ -13,7 +13,7 @@
   },
   "license": "AGPL-3.0",
   "engines": {
-    "node": ">=5 <9",
+    "node": ">=4 <9",
     "npm": ">=2 <6"
   },
   "main": "dist/index.js",
@@ -34,7 +34,7 @@
     "diehard": "^1.5.2",
     "joi-browser": "^10.6.1",
     "md5": "^2.2.1",
-    "pubnub": "^4.16.1",
+    "pubnub": "^4.16.2",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "chai": "^4.1.2",
     "chance": "^1.0.11",
     "coveralls": "^3.0.0",
-    "cross-env": "^5.0.5",
+    "cross-env": "^5.1.0",
     "eslint": "^4.9.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",

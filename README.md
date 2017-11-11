@@ -32,3 +32,4 @@ $ npm install --save home-automation-pubnub
 
 [dependencies-url]: https://david-dm.org/OronNadiv/home-automation-pubnub
 [devdependencies-url]: https://david-dm.org/OronNadiv/home-automation-pubnub?type=dev
+[pubnub]: https://www.pubnub.com

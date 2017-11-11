@@ -32,7 +32,7 @@
     "bluebird": "^3.5.1",
     "debug": "^3.1.0",
     "diehard": "^1.5.2",
-    "joi-browser": "^10.6.1",
+    "joi-browser": "^13.0.1",
     "md5": "^2.2.1",
     "pubnub": "^4.17.0",
     "uuid": "^3.1.0"
